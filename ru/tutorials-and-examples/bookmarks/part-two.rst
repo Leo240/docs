@@ -204,7 +204,7 @@
             return false;
         }
 
-        // Провекряем, что закладка принадлежит текущему пользователю.
+        // Проверяем, что закладка принадлежит текущему пользователю.
         $id = $this->request->getParam('pass.0');
         $bookmark = $this->Bookmarks->get($id);
         if ($bookmark->user_id == $user['id']) {
